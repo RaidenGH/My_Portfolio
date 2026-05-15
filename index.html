@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
+  <title>Reynald's - Personal Portfolio</title>
 
   <!--
     - favicon
@@ -130,19 +130,19 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="#" class="social-link">
+            <a href="https://www.facebook.com/Raiden012304" target="_blank" rel="noopener noreferrer" class=" social-link">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
+            <a href="https://github.com/RaidenGH" target="_blank" rel="noopener noreferrer" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="#" class="social-link">
+            <a href="https://www.instagram.com/liam_gio_26/" target="_blank" rel="noopener noreferrer" class="social-link">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
@@ -1181,26 +1181,31 @@
 
         <section class="contact-form">
 
-          <h3 class="h3 form-title">Contact Form</h3>
+  <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
+  <!-- Connect this form to Formspree -->
+  <form action="https://formspree.io/f/mqenvwyy" method="POST" class="form" data-form>
 
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+    <div class="input-wrapper">
+      <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
+      <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+    </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+    <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
+    <!-- Hidden field to identify submissions -->
+    <input type="hidden" name="_subject" value="New Contact Form Submission">
+    <input type="hidden" name="_captcha" value="false">
 
-          </form>
+    <button class="form-btn" type="submit" data-form-btn>
+      <ion-icon name="paper-plane"></ion-icon>
+      <span>Send Message</span>
+    </button>
 
-        </section>
+  </form>
+</section>
+
 
       </article>
 
